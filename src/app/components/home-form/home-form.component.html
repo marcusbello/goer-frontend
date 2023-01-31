@@ -1,1 +1,11 @@
-<p>home-form works!</p>
+<section>
+  <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+    <div class="inputbar">
+      <div class="formgrid">
+        <label for="url">URL:</label>
+        <input type="text" id="url" placeholder="Paste long url here to create a short goer.ng link" formControlName="url">
+      </div>
+      <button id="submit">Shorten</button>
+    </div>
+  </form>
+</section>

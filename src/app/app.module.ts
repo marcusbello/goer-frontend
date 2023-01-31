@@ -10,6 +10,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { HomeFormComponent } from './components/home-form/home-form.component'
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,12 +21,13 @@ import { HomeFormComponent } from './components/home-form/home-form.component'
     HomeComponent,
     HomeFormComponent
   ],
-  imports: [
-    BrowserModule,
-    MaterialModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        MaterialModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

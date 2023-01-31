@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-home-form',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeFormComponent implements OnInit {
 
+  reactiveForm: FormGroup;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.reactiveForm = new FormGroup({
+      url: new FormControl(null),
+    })
   }
 
+  onSubmit() {
+    console.log(this.reactiveForm.value)
+  }
 }
