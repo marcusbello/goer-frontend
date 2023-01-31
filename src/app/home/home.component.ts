@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  herotitle:string = "Create Short .NG URL";
-  herotext:string = "Free, fast and easy to remember URL shortener service, create and share your .ng short link with a single click.";
-  herobtn:string = "Get Started";
+  heroTitle:string = "Create Short .NG URL";
+  heroText:string = "Free, fast and easy to remember URL shortener service, create and share your .ng short link with a single click.";
+  heroBtn:string = "Get Started";
   constructor() { }
 
   ngOnInit(): void {
